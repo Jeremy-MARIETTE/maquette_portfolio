@@ -1,65 +1,107 @@
-body{
+body {
     margin: 5% 5%;
 }
-header{
-   display: block;
-   height: 10vh;
+
+header {
+    display: block;
+    height: 10vh;
 }
-#logo{
-    float: left;
-}
-#liens{
-    float: right;
+
+a {
     text-decoration: none;
 }
-#profil{
+
+#logo {
+    float: left;
+}
+
+#liens {
     float: right;
 }
-h2{
+
+#profil {
+    float: right;
+}
+
+h2 {
     text-align: center;
 }
-hr{
+
+hr {
     width: 50%;
 }
 
+
 /*Block compétences*/
-.competences{
+
+.competences {
     width: 100%
 }
-#front{
+
+#front {
     width: 50%;
     float: left;
 }
-#back{
+
+#back {
     width: 50%;
     float: right;
 }
-#graphisme{
+
+#graphisme {
     width: 50%;
     float: left;
 }
-#seo{
+
+#seo {
     width: 50%;
     float: right;
 }
+
+
 /*Block projet*/
-.projets{
+
+.projets {
     width: 100%;
     height: 20vh;
 }
-#projet-1{
+
+#projet-1 {
     float: left;
     width: 30%;
 }
-#projet-2{
+
+#projet-2 {
     float: left;
     width: 30%;
 }
-#projet-3{
+
+#projet-3 {
     float: right;
     width: 30%;
 }
+
+
 /*Block contact*/
-form{
+
+form {
     text-align: center;
+}
+
+input {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+}
+
+textarea {
+    width: 50%;
+    border-radius: 10px;
+    resize: none;
 }
