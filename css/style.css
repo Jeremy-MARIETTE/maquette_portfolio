@@ -38,14 +38,17 @@ nav {
     margin-right: 5%;
 }
 
-#profil {
-    float: right;
+#title {
+    display: inline-block;
+    position: relative;
+    margin-left: 10%;
 }
 
-.about {
-    padding-left: 10%;
-    text-align: center;
-    position: relative;
+h1 {
+    float: left;
+    margin-left: 0%;
+    font-size: 5em;
+    color: aliceblue;
 }
 
 h2 {
@@ -60,6 +63,12 @@ hr {
 
 /*Block compétences*/
 
+.apropos {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
 .competences {
     width: 100%;
     margin-top: 20%;
@@ -67,22 +76,12 @@ hr {
     text-align: center;
 }
 
-#front {
+#left {
     width: 50%;
     float: left;
 }
 
-#back {
-    width: 50%;
-    float: right;
-}
-
-#graphisme {
-    width: 50%;
-    float: left;
-}
-
-#seo {
+#right {
     width: 50%;
     float: right;
 }
