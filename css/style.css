@@ -1,10 +1,13 @@
 body {
-    margin: 5% 5%;
+    margin: 5px;
 }
 
 header {
-    display: block;
-    height: 10vh;
+    margin-top: 0%;
+}
+
+svg {
+    position: absolute;
 }
 
 a {
@@ -13,14 +16,24 @@ a {
 
 #logo {
     float: left;
+    margin-top: 0%;
+    position: relative;
 }
 
 #liens {
     float: right;
+    margin-top: 0%;
+    position: relative;
 }
 
 #profil {
     float: right;
+}
+
+.about {
+    margin-top: 10%;
+    position: absolute;
+    display: block;
 }
 
 h2 {
@@ -35,7 +48,9 @@ hr {
 /*Block compétences*/
 
 .competences {
-    width: 100%
+    width: 100%;
+    margin-top: 20%;
+    display: block;
 }
 
 #front {
