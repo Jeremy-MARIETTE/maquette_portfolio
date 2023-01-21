@@ -1,12 +1,11 @@
 body {
     margin-left: 0%;
+    background-color: #5ac8fa;
 }
 
 header {
     margin-top: 0%;
-    position: absolute;
     width: 100%;
-    display: block;
 }
 
 svg {
@@ -16,6 +15,18 @@ svg {
 a {
     text-decoration: none;
     color: white;
+    font-size: 24px;
+}
+
+nav {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+
+nav a {
+    float: right;
 }
 
 #logo {
@@ -28,7 +39,7 @@ a {
 #liens {
     float: right;
     margin-top: 10px;
-    position: relative;
+    margin-right: 5%;
 }
 
 #profil {
@@ -37,13 +48,13 @@ a {
 
 .about {
     padding-left: 10%;
-    position: absolute;
     text-align: center;
-    display: block;
+    position: relative;
 }
 
 h2 {
     text-align: center;
+    color: #5856d6;
 }
 
 hr {
