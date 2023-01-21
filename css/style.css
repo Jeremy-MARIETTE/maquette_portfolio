@@ -10,6 +10,7 @@ header {
 
 svg {
     position: absolute;
+    z-index: -1;
 }
 
 a {
@@ -19,19 +20,14 @@ a {
 }
 
 nav {
-    background-color: red;
-    position: absolute;
     width: 100%;
     height: 10%;
-}
-
-nav a {
-    float: right;
 }
 
 #logo {
     float: left;
     margin-top: 10px;
+    margin-right: 60%;
     padding-left: 20px;
     position: relative;
 }
