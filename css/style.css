@@ -144,34 +144,26 @@ textarea {
 }
 
 
-/*Menu*/
+/*Menu 2*/
 
-.topnav {
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
+#responsive-menu-list {
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.menu-item a {
+    color: #FFF;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.topnav .icon {
+#menu-expand-collapse {
     display: none;
+    cursor: pointer;
 }
 
 
@@ -216,24 +208,18 @@ textarea {
         resize: none;
     }
     /*Menu*/
-    .topnav a:not(:first-child) {
+    #responsive-menu-list {
         display: none;
+        width: 100%;
     }
-    .topnav a.icon {
-        float: right;
+    .menu-item {
         display: block;
     }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
+    #menu-expand-collapse {
         display: block;
-        text-align: left;
+        text-align: right;
+    }
+    .menu-item a {
+        font-size: 10px;
     }
 }

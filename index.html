@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portfolio</title>
 </head>
 
@@ -20,22 +20,30 @@
 
 
         <div class="topnav" id="myTopnav">
-
-            <a href="#apropos">
-                < A propos/> </a>
-            <a href="#competences">
-                < Compétences/> </a>
-            <a href="#projets">
-                < Portfolio/> </a>
-            <a href="#contact">
-                < Contact/> </a>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <i class="fa fa-bars"></i>
         </div>
 
-
+        <div id="responsive-menu">
+            <div id="menu-expand-collapse"><img src="images/menu.png" width="50px"></div>
+            <div id="responsive-menu-list">
+                <div class="menu-item">
+                    <a href="#apropos">
+                        < A propos/> </a>
+                </div>
+                <div class="menu-item">
+                    <a href="#competences">
+                        < Compétences/> </a>
+                </div>
+                <div class="menu-item">
+                    <a href="#projets">
+                        < Portfolio/> </a>
+                </div>
+                <div class="menu-item">
+                    <a href="#contact">
+                        < Contact/> </a>
+                </div>
+            </div>
+        </div>
 
     </header>
 
@@ -150,12 +158,9 @@
 </html>
 
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
+    $(document).ready(function() {
+        $("#menu-expand-collapse").click(function() {
+            $("#responsive-menu-list").toggle();
+        });
+    });
 </script>
