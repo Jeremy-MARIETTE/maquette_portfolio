@@ -218,8 +218,39 @@ textarea {
     #menu-expand-collapse {
         display: block;
         text-align: right;
+        float: right;
+    }
+    .menu-item a {
+        font-size: 30px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 0%;
+        display: block;
+        margin-left: 80%;
+    }
+}
+
+
+/*Media queries tablette*/
+
+
+/* Media Query for Tablets Ipads portrait mode */
+
+@media screen and (max-width: 1024px) {
+    #responsive-menu-list {
+        display: none;
+    }
+    .menu-item {
+        display: block;
+    }
+    #menu-expand-collapse {
+        display: block;
+        text-align: right;
+        float: right;
     }
     .menu-item a {
         font-size: 10px;
+        display: block;
+        margin-left: 80%;
     }
 }
