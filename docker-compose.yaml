@@ -4,5 +4,4 @@ services:
     volumes:
       - .:/var/www/html
     ports:
-      - "8080:80"
-    working_dir: /var/www/html
+      - "8081:80"  # Remplacer le port 8080 par 8081
