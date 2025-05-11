@@ -9,5 +9,5 @@ services:
       - ./app:/var/www/html  # Monte le répertoire local "app" dans le répertoire /var/www/html du conteneur
     working_dir: /var/www/html
     command: >
-      bash -c "git clone https://github.com/Jeremy-MARIETTE/maquette_portfolio.git /var/www/html && apache2-foreground"
+      bash -c "apt-get update && apt-get install -y git && git clone https://github.com/Jeremy-MARIETTE/maquette_portfolio.git /var/www/html && apache2-foreground"
     restart: always  # Redémarre le conteneur en cas d'arrêt
