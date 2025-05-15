@@ -9,6 +9,3 @@ services:
       - portfolio:/var/www/html
     working_dir: /var/www/html
 
-volumes:
-  portfolio:
-    external: true
