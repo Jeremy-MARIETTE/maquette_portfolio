@@ -4,8 +4,11 @@ services:
   app:
     image: php:8.2-apache
     ports:
-      - "8081:80"  # Le port 8081 de l'hôte sera mappé sur le port 80 du conteneur
+      - "8081:80"
     volumes:
-      - ./app:/var/www/html  # Monte le répertoire local "app" dans le répertoire /var/www/html du conteneur
+      - portfolio:/var/www/html
     working_dir: /var/www/html
 
+volumes:
+  portfolio:
+    external: true
